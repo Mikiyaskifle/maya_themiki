@@ -49,17 +49,17 @@ npm run preview
 Edit `src/data/loveContent.ts` to customize:
 
 1. **Names**: Your name and her name
-2. **Relationship Dates**: Start date and special moments
+2. **Relationship Dates**: Start date and special moments  
 3. **Personal Messages**: Feelings, stories, and love letter
-4. **Photos**: Replace placeholder images in `public/images/`
-5. **Timeline**: Your relationship milestones
+4. **Her Photos**: Add her beautiful photos to `public/images/` (photo1.jpg, photo2.jpg, etc.)
+5. **Timeline**: Your journey together
 6. **Reasons**: Why you love her (interactive cards)
-7. **Secret Message**: Hidden surprise content
+7. **Secret Message**: Hidden surprise just for her
 
-### Adding Your Photos
-1. Place your photos in `public/images/`
-2. Update the `memories` array in `loveContent.ts`
-3. Use the path `/images/your-photo.jpg`
+### Adding Her Photos
+1. Place her photos in `public/images/` (rename to photo1.jpg, photo2.jpg, etc.)
+2. Update the `memories` array in `loveContent.ts` if needed
+3. Use the path `/images/photo1.jpg`, `/images/photo2.jpg`, etc.
 
 ## 🎵 Adding Music
 1. Place your audio file in `public/audio/`

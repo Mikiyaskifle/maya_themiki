@@ -76,7 +76,7 @@ const LoadingScreen = ({ message = "Creating your world..." }: LoadingScreenProp
               {message}{dots}
             </p>
             <p className="text-romantic-red/60 text-sm">
-              Preparing 3D scenes, cinematic animations, and romantic storytelling...
+              Creating 3D scenes, cinematic animations, and heartfelt storytelling just for you...
             </p>
           </div>
 

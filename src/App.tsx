@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
-import { Heart, Music, Sparkles } from 'lucide-react'
+import { Heart, Sparkles } from 'lucide-react'
 import HeroSection from './sections/HeroSection'
+import SimpleGallery from './sections/SimpleGallery'
+import FutureMarriage from './sections/FutureMarriage'
 import LoadingScreen from './components/LoadingScreen'
 import MusicToggle from './components/MusicToggle'
 import ScrollProgress from './components/ScrollProgress'
@@ -9,6 +11,7 @@ import FloatingParticles from './components/FloatingParticles'
 function App() {
   const [isLoading, setIsLoading] = useState(true)
   const [isMusicPlaying, setIsMusicPlaying] = useState(false)
+  const [showFuture, setShowFuture] = useState(false)
 
   useEffect(() => {
     // Simulate initial loading
@@ -20,8 +23,16 @@ function App() {
   }, [])
 
   const handleEnterWorld = () => {
-    console.log('Entering the world...')
-    // This will trigger the cinematic transition
+    console.log('Revealing our future...')
+    setShowFuture(true)
+    
+    // Scroll to future section
+    setTimeout(() => {
+      document.getElementById('future')?.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'center'
+      })
+    }, 100)
   }
 
   const toggleMusic = () => {
@@ -64,9 +75,7 @@ function App() {
           
           <div className="hidden md:flex items-center gap-8">
             <a href="#hero" className="text-soft-rose hover:text-champagne transition-colors">Home</a>
-            <a href="#feelings" className="text-soft-rose hover:text-champagne transition-colors">Feelings</a>
             <a href="#memories" className="text-soft-rose hover:text-champagne transition-colors">Memories</a>
-            <a href="#story" className="text-soft-rose hover:text-champagne transition-colors">Our Story</a>
             <button 
               onClick={handleEnterWorld}
               className="px-6 py-2 bg-gradient-romantic rounded-full font-semibold hover:scale-105 transition-transform"
@@ -83,35 +92,21 @@ function App() {
           <HeroSection onEnterWorld={handleEnterWorld} />
         </section>
 
-        {/* Placeholder sections */}
-        <div className="section-spacing container-padding text-center">
-          <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-champagne mb-8">
-            The Experience is Loading...
-          </h2>
-          <p className="text-soft-rose text-lg max-w-2xl mx-auto">
-            We're building your personalized romantic universe with interactive 3D scenes, 
-            cinematic animations, and beautiful storytelling.
-          </p>
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="glass-effect rounded-2xl p-8 animate-pulse">
-                <div className="w-16 h-16 bg-romantic-red/20 rounded-full mx-auto mb-4"></div>
-                <div className="h-6 bg-romantic-red/20 rounded w-3/4 mx-auto mb-2"></div>
-                <div className="h-4 bg-romantic-red/20 rounded w-full mx-auto"></div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Photo Gallery */}
+        <SimpleGallery />
+
+        {/* Future Marriage Section - Revealed when clicking heart */}
+        {showFuture && <FutureMarriage />}
       </main>
 
       {/* Footer */}
       <footer className="py-8 text-center border-t border-dark-burgundy/30">
         <div className="container-padding">
           <p className="text-soft-rose">
-            Made with ❤️ using React, Three.js, and endless love
+            Created with endless love, just for you
           </p>
           <p className="text-sm text-romantic-red/60 mt-2">
-            © {new Date().getFullYear()} A World Made For You
+            Forever yours
           </p>
         </div>
       </footer>

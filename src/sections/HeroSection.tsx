@@ -61,9 +61,15 @@ const HeroSection = ({ onEnterWorld }: HeroSectionProps) => {
             {/* Inner glow */}
             <div className="absolute inset-8 rounded-full bg-romantic-red/10 blur-xl"></div>
             
-            {/* Heart icon */}
+            {/* Heart icon - Clickable */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <Heart className="w-3/4 h-3/4 text-romantic-red fill-romantic-red/20 animate-heartbeat" />
+              <button 
+                onClick={onEnterWorld}
+                className="focus:outline-none hover:scale-110 transition-transform duration-300"
+                aria-label="Reveal our future"
+              >
+                <Heart className="w-3/4 h-3/4 text-romantic-red fill-romantic-red/20 animate-heartbeat" />
+              </button>
             </div>
             
             {/* Reflective highlights */}

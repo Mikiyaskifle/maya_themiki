@@ -121,7 +121,7 @@ function MobileMenu({
   activeSection, 
   scrollToSection 
 }: { 
-  navItems: typeof navItems
+  navItems: Array<{ id: string, label: string, icon: React.ReactNode }>
   activeSection: string
   scrollToSection: (sectionId: string) => void 
 }) {
@@ -177,7 +177,7 @@ function MobileMenu({
             onClick={(e) => e.stopPropagation()}
           >
             <div className="space-y-2">
-              {navItems.map((item) => (
+              {navItems.map((item: { id: string, label: string, icon: React.ReactNode }) => (
                 <motion.button
                   key={item.id}
                   whileHover={{ scale: 1.02 }}

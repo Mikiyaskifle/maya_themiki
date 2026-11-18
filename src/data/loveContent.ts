@@ -4,14 +4,14 @@
 export const loveContent = {
   // Personal Information
   names: {
-    myName: "Your Name",
-    herName: "Her Name",
+    myName: "Orion",
+    herName: "Maye",
     nicknames: ["My Love", "My Beautiful", "My Everything"]
   },
 
   // Relationship Details
   relationship: {
-    startDate: "2023-01-01", // YYYY-MM-DD format
+    startDate: "2026-01-10", // YYYY-MM-DD format
     specialDates: [
       { date: "2023-02-14", title: "Our First Valentine's", description: "The day we celebrated our first Valentine's together" },
       { date: "2023-06-15", title: "First Anniversary", description: "Six months of beautiful moments" },
@@ -50,49 +50,49 @@ export const loveContent = {
     }
   ],
 
-  // Memories Gallery
+  // Memories Gallery - Only her beautiful photos
   memories: [
     {
       id: 1,
-      image: "/images/memory1.jpg",
-      caption: "Our first sunset together",
+      image: "/images/photo1.jpg",
+      caption: "That beautiful smile",
       date: "2023-01-15",
-      description: "Watching the sun dip below the horizon, hand in hand, knowing this was just the beginning."
+      description: "The smile that lights up my world brighter than a thousand suns."
     },
     {
       id: 2,
-      image: "/images/memory2.jpg",
-      caption: "That laughter-filled afternoon",
+      image: "/images/photo2.jpg",
+      caption: "Your radiant presence",
       date: "2023-03-20",
-      description: "When you told that joke and I couldn't stop laughing for hours."
+      description: "Every moment with you feels like pure magic."
     },
     {
       id: 3,
-      image: "/images/memory3.jpg",
-      caption: "Midnight conversations",
+      image: "/images/photo3.jpg",
+      caption: "Midnight beauty",
       date: "2023-05-10",
-      description: "Talking about everything and nothing until the early hours of the morning."
+      description: "Even the stars seem to shine brighter when you're around."
     },
     {
       id: 4,
-      image: "/images/memory4.jpg",
-      caption: "Our favorite coffee shop",
+      image: "/images/photo4.jpg",
+      caption: "Morning elegance",
       date: "2023-07-05",
-      description: "Countless Saturday mornings spent sharing stories over coffee."
+      description: "Waking up knowing you're in my life is the greatest blessing."
     },
     {
       id: 5,
-      image: "/images/memory5.jpg",
-      caption: "The unexpected rain",
+      image: "/images/photo5.jpg",
+      caption: "Evening grace",
       date: "2023-09-18",
-      description: "Getting caught in the rain and dancing together like no one was watching."
+      description: "Your beauty transforms even the simplest moments into something extraordinary."
     },
     {
       id: 6,
-      image: "/images/memory6.jpg",
-      caption: "Stargazing night",
+      image: "/images/photo6.jpg",
+      caption: "Timeless beauty",
       date: "2023-11-22",
-      description: "Laying under the stars, making wishes on every shooting star we saw."
+      description: "A glimpse of perfection that I get to cherish every day."
     }
   ],
 
@@ -101,43 +101,43 @@ export const loveContent = {
     {
       id: 1,
       date: "2023-01-01",
-      title: "The Night We Met",
-      description: "That magical evening when our eyes met for the first time. I knew right then that you were someone special.",
+      title: "The Night I Met You",
+      description: "That magical evening when I first saw you. I knew right then that my life would never be the same.",
       highlight: true
     },
     {
       id: 2,
       date: "2023-01-10",
       title: "Our First Conversation",
-      description: "Hours of talking about everything - our dreams, fears, and everything in between.",
+      description: "Hours talking with you, discovering the beautiful soul behind that radiant smile.",
       highlight: false
     },
     {
       id: 3,
       date: "2023-01-25",
-      title: "The First Laugh",
-      description: "When you told that silly joke and I heard your beautiful laugh for the first time.",
+      title: "Hearing Your Laugh",
+      description: "The first time I heard your beautiful laugh - it instantly became my favorite sound.",
       highlight: true
     },
     {
       id: 4,
       date: "2023-02-14",
-      title: "First Valentine's",
-      description: "Our first celebration of love, filled with sweet gestures and heartfelt promises.",
+      title: "First Valentine's For You",
+      description: "My first opportunity to show you how special you truly are.",
       highlight: false
     },
     {
       id: 5,
       date: "2023-06-15",
-      title: "Six Month Anniversary",
-      description: "Half a year of growing together, learning about each other, and falling deeper in love.",
+      title: "Six Months of You",
+      description: "Half a year of being blessed by your presence in my life.",
       highlight: true
     },
     {
       id: 6,
       date: "2024-01-01",
-      title: "One Year Together",
-      description: "365 days of love, laughter, and building beautiful memories together.",
+      title: "One Year With You",
+      description: "365 days of the greatest happiness I've ever known, all because of you.",
       highlight: true
     }
   ],
@@ -199,7 +199,7 @@ export const loveContent = {
       "Thank you for being you. Thank you for loving me. Thank you for this beautiful life we're building together."
     ],
     closing: "Forever yours,",
-    signature: "Your Name"
+    signature: "Orion"
   },
 
   // Secret Surprise
@@ -219,8 +219,9 @@ export const loveContent = {
 
   // Audio Configuration
   audio: {
-    backgroundMusic: "/audio/romantic-music.mp3",
-    volume: 0.3,
+    // Your local music file
+    backgroundMusic: "/audio/music1.mp3", // Your music file
+    volume: 0.4,
     autoplay: false
   },
 
