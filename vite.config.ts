@@ -9,16 +9,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: true,
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          'three-vendor': ['three', '@react-three/fiber', '@react-three/drei'],
-          'animation-vendor': ['gsap', 'framer-motion'],
-          'ui-vendor': ['lucide-react']
-        }
-      }
-    }
+    sourcemap: true
   },
   optimizeDeps: {
     exclude: ['lucide-react']

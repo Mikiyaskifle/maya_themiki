@@ -4,12 +4,14 @@ import HeroSection from './sections/HeroSection'
 import SimpleGallery from './sections/SimpleGallery'
 import FutureMarriage from './sections/FutureMarriage'
 import LoadingScreen from './components/LoadingScreen'
+import PostcardIntro from './components/PostcardIntro'
 import MusicToggle from './components/MusicToggle'
 import ScrollProgress from './components/ScrollProgress'
 import FloatingParticles from './components/FloatingParticles'
 
 function App() {
   const [isLoading, setIsLoading] = useState(true)
+  const [showPostcard, setShowPostcard] = useState(true)
   const [isMusicPlaying, setIsMusicPlaying] = useState(false)
   const [showFuture, setShowFuture] = useState(false)
 
@@ -21,6 +23,10 @@ function App() {
 
     return () => clearTimeout(timer)
   }, [])
+
+  const handlePostcardOpen = () => {
+    setShowPostcard(false)
+  }
 
   const handleEnterWorld = () => {
     console.log('Revealing our future...')
@@ -41,6 +47,10 @@ function App() {
 
   if (isLoading) {
     return <LoadingScreen />
+  }
+
+  if (showPostcard) {
+    return <PostcardIntro onOpen={handlePostcardOpen} />
   }
 
   return (

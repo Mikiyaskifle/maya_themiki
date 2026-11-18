@@ -13,6 +13,8 @@ export default {
         'soft-rose': '#F1A5B5',
         'champagne': '#F5D9CB',
         'white': '#FFF8F5',
+        'vintage-ivory': '#F8F3E5',
+        'golden-seal': '#D4AF37',
       },
       fontFamily: {
         'playfair': ['"Playfair Display"', 'serif'],
