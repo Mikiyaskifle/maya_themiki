@@ -11,6 +11,7 @@ const PostcardIntro = ({ onOpen }: PostcardIntroProps) => {
   const [letterVisible, setLetterVisible] = useState(false)
   const [showButton, setShowButton] = useState(false)
   const [isOpening, setIsOpening] = useState(false)
+  const [isExiting, setIsExiting] = useState(false)
 
   useEffect(() => {
     // Flash animation for envelope
@@ -38,15 +39,18 @@ const PostcardIntro = ({ onOpen }: PostcardIntroProps) => {
   }
 
   const handleOpenClick = () => {
-    // Exit animation
-    setIsOpening(true)
+    if (isExiting) return
+    
+    // Start exit animation
+    setIsExiting(true)
+    // Start fade out animation
     setTimeout(() => {
       onOpen()
-    }, 800)
+    }, 500)
   }
 
   return (
-    <div className="fixed inset-0 bg-deep-black z-[60] flex items-center justify-center p-4">
+    <div className={`fixed inset-0 bg-deep-black z-[60] flex items-center justify-center p-4 transition-opacity duration-500 ${isExiting ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
       {/* Animated background */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-romantic-red/10 rounded-full blur-3xl"></div>
@@ -155,12 +159,14 @@ const PostcardIntro = ({ onOpen }: PostcardIntroProps) => {
                   <div className={`transition-all duration-700 ${showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
                     <button
                       onClick={handleOpenClick}
-                      disabled={isOpening}
+                      disabled={isExiting}
                       className="w-full py-4 bg-gradient-romantic rounded-xl font-semibold text-vintage-ivory flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50"
                     >
                       <span className="text-lg">Open Our World</span>
                       <ChevronRight className="w-6 h-6" />
                     </button>
+                    
+
                   </div>
                 )}
               </div>
