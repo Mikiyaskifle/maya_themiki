@@ -137,21 +137,28 @@ const PostcardIntro = ({ onOpen }: PostcardIntroProps) => {
                     From the one who loves you endlessly
                   </p>
                   
-                  {/* Open button at the TOP - right after heading */}
-                  <div className={`transition-all duration-700 ${showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                  {/* Open button at the TOP - right after heading - HIGHLY VISIBLE */}
+                  <div className={`transition-all duration-700 ${showButton ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'}`}>
                     <button
                       onClick={handleOpenClick}
                       disabled={isExiting || !showButton}
-                      className="w-full py-3 sm:py-4 bg-gradient-romantic rounded-lg sm:rounded-xl font-semibold text-vintage-ivory flex items-center justify-center gap-2 sm:gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 text-base sm:text-lg mb-6 sm:mb-8"
+                      className="w-full py-4 sm:py-5 bg-gradient-to-r from-romantic-red via-soft-rose to-romantic-red rounded-xl sm:rounded-2xl font-bold text-vintage-ivory flex items-center justify-center gap-3 hover:scale-[1.03] active:scale-[0.97] transition-all disabled:opacity-70 text-lg sm:text-xl shadow-lg hover:shadow-xl animate-pulse-slow animate-glow mb-6 sm:mb-8 border-2 border-vintage-ivory/30 relative overflow-hidden"
                     >
-                      <span>Open Our World</span>
-                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                      {/* Shine effect */}
+                      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full animate-shine"></div>
+                      <span className="drop-shadow-lg relative z-10">✨ CLICK HERE TO ENTER ✨</span>
+                      <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7 relative z-10" />
                     </button>
                     
-                    {/* Debug message for small screens */}
-                    <p className="text-center text-xs text-golden-seal/50 sm:hidden mb-4">
-                      {!showButton ? "Button will appear in a moment..." : "Click above to enter our world"}
-                    </p>
+                    {/* More visible instruction */}
+                    <div className="text-center mb-4">
+                      <p className="text-sm sm:text-base font-semibold text-romantic-red animate-bounce">
+                        ⬆️ CLICK THE BUTTON ABOVE! ⬆️
+                      </p>
+                      <p className="text-xs text-golden-seal/70 mt-1">
+                        {!showButton ? "Button appearing in..." : "Ready to explore our world!"}
+                      </p>
+                    </div>
                   </div>
                 </div>
 
