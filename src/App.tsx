@@ -3,6 +3,7 @@ import { Heart, Sparkles } from 'lucide-react'
 import HeroSection from './sections/HeroSection'
 import SimpleGallery from './sections/SimpleGallery'
 import FutureMarriage from './sections/FutureMarriage'
+import FunInteractiveFeatures from './sections/FunInteractiveFeatures'
 import LoadingScreen from './components/LoadingScreen'
 import PostcardIntro from './components/PostcardIntro'
 import MusicToggle from './components/MusicToggle'
@@ -112,6 +113,9 @@ function App() {
 
         {/* Photo Gallery */}
         <SimpleGallery />
+
+        {/* Fun Interactive Features - NEW! */}
+        <FunInteractiveFeatures />
 
         {/* Future Marriage Section - Revealed when clicking heart */}
         {showFuture && <FutureMarriage />}
