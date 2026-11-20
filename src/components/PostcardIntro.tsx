@@ -128,18 +128,35 @@ const PostcardIntro = ({ onOpen }: PostcardIntroProps) => {
 
               {/* Letter content */}
               <div className="relative z-10">
-                {/* Letterhead */}
-                <div className="border-b border-golden-seal/20 pb-3 sm:pb-4 mb-4 sm:mb-6">
+                {/* Letterhead with button immediately after */}
+                <div className="border-b border-golden-seal/20 pb-3 sm:pb-4">
                   <h1 className="font-playfair text-2xl sm:text-3xl md:text-4xl font-bold text-deep-black leading-tight">
                     To My Dearest Maya,
                   </h1>
-                  <p className="text-golden-seal/60 text-sm sm:text-base mt-1 sm:mt-2">
+                  <p className="text-golden-seal/60 text-sm sm:text-base mt-1 sm:mt-2 mb-4 sm:mb-6">
                     From the one who loves you endlessly
                   </p>
+                  
+                  {/* Open button at the TOP - right after heading */}
+                  <div className={`transition-all duration-700 ${showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+                    <button
+                      onClick={handleOpenClick}
+                      disabled={isExiting || !showButton}
+                      className="w-full py-3 sm:py-4 bg-gradient-romantic rounded-lg sm:rounded-xl font-semibold text-vintage-ivory flex items-center justify-center gap-2 sm:gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 text-base sm:text-lg mb-6 sm:mb-8"
+                    >
+                      <span>Open Our World</span>
+                      <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                    </button>
+                    
+                    {/* Debug message for small screens */}
+                    <p className="text-center text-xs text-golden-seal/50 sm:hidden mb-4">
+                      {!showButton ? "Button will appear in a moment..." : "Click above to enter our world"}
+                    </p>
+                  </div>
                 </div>
 
-                {/* Letter body with better spacing */}
-                <div className="font-serif text-deep-black/80 leading-relaxed space-y-3 sm:space-y-4 mb-6 sm:mb-8">
+                {/* Letter body - now appears BELOW the button */}
+                <div className="font-serif text-deep-black/80 leading-relaxed space-y-3 sm:space-y-4 pt-4 sm:pt-6">
                   <p className="text-base sm:text-lg">
                     This isn't just a website — it's a world I've created just for you.
                   </p>
@@ -149,25 +166,8 @@ const PostcardIntro = ({ onOpen }: PostcardIntroProps) => {
                   <p className="text-sm sm:text-base">
                     It's my way of showing how much you mean to me, in a way that words alone could never capture.
                   </p>
-                  <p className="font-semibold text-romantic-red text-base sm:text-lg mt-4 sm:mt-6">
+                  <p className="font-semibold text-romantic-red text-base sm:text-lg mt-4 sm:mt-6 italic">
                     Please open this and step into our world...
-                  </p>
-                </div>
-
-                {/* Open button - ALWAYS SHOW, just control opacity */}
-                <div className={`transition-all duration-700 ${showButton ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-                  <button
-                    onClick={handleOpenClick}
-                    disabled={isExiting || !showButton}
-                    className="w-full py-3 sm:py-4 bg-gradient-romantic rounded-lg sm:rounded-xl font-semibold text-vintage-ivory flex items-center justify-center gap-2 sm:gap-3 hover:scale-[1.02] active:scale-[0.98] transition-all disabled:opacity-50 text-base sm:text-lg"
-                  >
-                    <span>Open Our World</span>
-                    <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
-                  </button>
-                  
-                  {/* Debug message for small screens */}
-                  <p className="mt-2 text-center text-xs text-golden-seal/50 sm:hidden">
-                    {!showButton ? "Button will appear in a moment..." : "Click to enter"}
                   </p>
                 </div>
               </div>
