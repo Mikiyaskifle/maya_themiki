@@ -66,33 +66,41 @@ function App() {
       <FloatingParticles count={50} />
       <ScrollProgress />
       
-      <div className="fixed top-4 right-4 z-50 flex items-center gap-4">
+      <div className="fixed top-3 right-3 sm:top-4 sm:right-4 z-50 flex items-center gap-2 sm:gap-4">
         <MusicToggle isPlaying={isMusicPlaying} onToggle={toggleMusic} />
-        <button className="p-3 glass-effect rounded-full hover:bg-romantic-red/20 transition-colors">
-          <Sparkles className="w-5 h-5 text-champagne" />
+        <button className="p-2 sm:p-3 glass-effect rounded-full hover:bg-romantic-red/20 transition-colors">
+          <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-champagne" />
         </button>
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-40 py-6 px-8 glass-effect backdrop-blur-lg">
+      <nav className="fixed top-0 left-0 right-0 z-40 py-4 px-4 sm:py-6 sm:px-8 glass-effect backdrop-blur-lg">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <Heart className="w-6 h-6 text-romantic-red fill-romantic-red" />
-            <span className="font-playfair text-xl font-bold text-champagne">
+            <Heart className="w-5 h-5 sm:w-6 sm:h-6 text-romantic-red fill-romantic-red" />
+            <span className="font-playfair text-lg sm:text-xl font-bold text-champagne">
               A World Made For You
             </span>
           </div>
           
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#hero" className="text-soft-rose hover:text-champagne transition-colors">Home</a>
-            <a href="#memories" className="text-soft-rose hover:text-champagne transition-colors">Memories</a>
+          {/* Desktop menu */}
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
+            <a href="#hero" className="text-soft-rose hover:text-champagne transition-colors text-sm lg:text-base">Home</a>
+            <a href="#memories" className="text-soft-rose hover:text-champagne transition-colors text-sm lg:text-base">Memories</a>
             <button 
               onClick={handleEnterWorld}
-              className="px-6 py-2 bg-gradient-romantic rounded-full font-semibold hover:scale-105 transition-transform"
+              className="px-4 py-2 lg:px-6 lg:py-2 bg-gradient-romantic rounded-full font-semibold hover:scale-105 transition-transform text-sm lg:text-base"
             >
               Enter World
             </button>
           </div>
+          
+          {/* Mobile menu button */}
+          <button className="md:hidden p-2 text-soft-rose hover:text-champagne transition-colors">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </nav>
 
