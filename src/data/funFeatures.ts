@@ -1,215 +1,189 @@
-// Data for fun interactive romantic features
+// Thoughtful moments and playful connections
+// Each feature is a little piece of our story
 
 export const funFeatures = {
   loveMeter: {
-    title: "How Much Do You Love Me? 😂",
-    description: "Slide to show your love percentage!",
+    title: "Our Love Scale",
+    description: "How full does your heart feel today?",
     levels: [
-      { min: 0, max: 20, message: "Are you even trying? 😅" },
-      { min: 21, max: 40, message: "Getting warmer... but still cold! ❄️" },
-      { min: 41, max: 60, message: "Okay, I see some effort! 😊" },
-      { min: 61, max: 80, message: "Now we're talking! ❤️" },
-      { min: 81, max: 99, message: "Almost perfect! Just a little more! 💖" },
-      { min: 100, max: 100, message: "Only 100%? Sorry, this website requires at least 1000000% to continue! 😂❤️" }
+      { min: 0, max: 20, message: "Just thinking of you makes me smile." },
+      { min: 21, max: 40, message: "Every memory with you feels precious." },
+      { min: 41, max: 60, message: "You have my whole heart, always." },
+      { min: 61, max: 80, message: "My love for you grows with each passing day." },
+      { min: 81, max: 99, message: "You are my greatest joy and deepest comfort." },
+      { min: 100, max: 100, message: "Infinite love, for every moment we share together." }
     ]
   },
 
   emergencyButton: {
-    title: "Emergency Love Button 🚨",
-    buttonText: "I MISS YOU!",
+    title: "Quick Love Boost",
+    buttonText: "I MISS YOU",
     messages: [
-      "Emergency detected! Your boyfriend needs 1 hug, 2 kisses, and unlimited attention immediately!",
-      "ALERT: Severe cuteness deficiency detected! Requires immediate Maya presence!",
-      "Warning: Boyfriend is experiencing extreme missing-Maya syndrome! Treatment: Your smile!",
-      "Code Red: Love levels critical! Emergency cuddle protocol activated!",
-      "SOS: Heart is beating too fast thinking about you! Need Maya's calming effect!"
+      "Thinking of you and sending all my love your way.",
+      "Wishing I could be there to hug you right now.",
+      "You're in my thoughts, as you always are.",
+      "Sending you warmth and affection across the distance.",
+      "My heart feels lighter knowing you're in the world."
     ]
   },
 
-  relationshipQuiz: {
-    title: "Relationship Quiz",
-    questions: [
-      {
-        id: 1,
-        question: "Who is more stubborn?",
-        options: ["Definitely me", "Probably you", "We're equally stubborn", "Let's not talk about it 😅"]
-      },
-      {
-        id: 2,
-        question: "Who says sorry first?",
-        options: ["Me, always", "You're the apologizer", "We both apologize", "We never fight! 😇"]
-      },
-      {
-        id: 3,
-        question: "Who is more dramatic?",
-        options: ["Me, obviously", "You have your moments", "We're both drama queens", "Our love story is the drama! 🎭"]
-      },
-      {
-        id: 4,
-        question: "Who loves more?",
-        options: ["I do, no question", "You do, obviously", "It's exactly equal", "Impossible to measure! ∞"]
-      }
-    ],
-    result: "Correct answer: We both know it's ME! 😂"
-  },
-
   loveFortune: {
-    title: "Love Fortune Machine 🔮",
-    buttonText: "Reveal My Future",
+    title: "Our Future Together",
+    buttonText: "Reveal Our Future",
     fortunes: [
-      "You will marry a handsome software engineer who codes love letters just for you! 💻❤️",
-      "Warning: Your future husband will steal your food but give you his heart forever! 🍕❤️",
-      "99.9% chance of unlimited hugs, kisses, and bad jokes from your loving boyfriend! 😘",
-      "Your future contains one very annoying but extremely loving husband! Get ready! 😂",
-      "The stars say: Infinite happiness with someone who thinks you're his universe! 🌟",
-      "Fortune: You'll be spoiled with love, attention, and maybe too many memes! 📱❤️",
-      "Prediction: Lifetime supply of cuddles, laughter, and cheesy romance! 🥰",
-      "Destiny says: You found your forever person who will never stop amazing you! ✨"
+      "A lifetime of shared laughter and quiet moments awaits.",
+      "Endless adventures, both big and small, will fill our days.",
+      "Your smile will continue to brighten even the simplest moments.",
+      "We'll build a home filled with love, understanding, and inside jokes.",
+      "Every challenge will only bring us closer together.",
+      "Our story will be one of mutual support and endless growth.",
+      "You'll always have my unwavering love and deepest respect.",
+      "Together, we'll create memories that last a lifetime."
     ]
   },
 
   openWhenLetters: {
-    title: "Open When... Letters 💌",
+    title: "Letters For You",
     letters: [
       {
         id: 1,
-        title: "Open when you miss me",
-        content: "I miss you too! More than words can say. Remember that no matter the distance, you're always in my heart. I'm counting down every second until I see you again. 💕",
+        title: "When you miss me",
+        content: "I'm thinking of you too. No matter where we are, you're always with me in my heart. Every memory we share makes the distance feel smaller.",
         emoji: "💕"
       },
       {
         id: 2,
-        title: "Open when you're sad",
-        content: "Hey beautiful, I know things might feel heavy right now. Just remember how amazing you are and how much you're loved. I'm here for you, always. Let me be your sunshine on cloudy days. ☀️",
+        title: "When you need comfort",
+        content: "I'm here for you, always. You're stronger than you know, and more loved than you can imagine. Let me be your safe place.",
         emoji: "☀️"
       },
       {
         id: 3,
-        title: "Open when you're angry with me",
-        content: "Oops! I probably did something silly. Just know that even when we disagree, I love you more than anything. Let's talk it out over some ice cream? 🍦❤️",
-        emoji: "🍦"
+        title: "When you're proud",
+        content: "I'm so incredibly proud of you. Watching you grow and achieve brings me more joy than I can express. You inspire me every day.",
+        emoji: "🎉"
       },
       {
         id: 4,
-        title: "Open when you can't sleep",
-        content: "Can't sleep? Me neither when I'm thinking of you! Imagine us cuddling under the stars, counting them together. Sweet dreams, my love. You're my favorite dream. 🌙✨",
-        emoji: "🌙"
+        title: "When you're thoughtful",
+        content: "Your kindness and thoughtfulness never cease to amaze me. The way you care for others is one of my favorite things about you.",
+        emoji: "💭"
       },
       {
         id: 5,
-        title: "Open when you need a smile",
-        content: "Smile! Because you have the most beautiful smile in the world. Remember that you're loved, cherished, and absolutely amazing. Now go look in the mirror and see the wonderful person I'm lucky to love! 😊💖",
-        emoji: "😊"
+        title: "When you're happy",
+        content: "Your happiness is contagious. Seeing you smile makes everything better. Keep shining that beautiful light of yours.",
+        emoji: "✨"
       }
     ]
   },
 
   boyfriendComplaints: {
-    title: "Boyfriend Complaint Department",
+    title: "Sweet Nothings",
     complaints: [
       {
         id: 1,
-        text: "He is too handsome",
-        response: "Complaint invalid: Can't help being genetically blessed for you! 😎"
+        text: "You make me feel incredibly loved",
+        response: "That's not a complaint—that's my favorite thing to do."
       },
       {
         id: 2,
-        text: "He misses me too much",
-        response: "Complaint rejected: Missing you is my full-time job! 📞❤️"
+        text: "You remember the little things",
+        response: "How could I forget anything about you?"
       },
       {
         id: 3,
-        text: "He talks too much",
-        response: "Complaint denied: I only talk this much because I have so much to say about you! 🗣️💕"
+        text: "You believe in me",
+        response: "Because you're worthy of every belief and dream."
       },
       {
         id: 4,
-        text: "He doesn't stop loving me",
-        response: "Complaint dismissed: Infinite love is non-negotiable! ∞❤️"
+        text: "You make me smile",
+        response: "Your smile is what I live for."
       }
     ],
-    departmentName: "Department of Eternal Love & No Complaints Accepted"
+    departmentName: "Department of Appreciation & Affection"
   },
 
   reasonsILoveYou: {
-    title: "Reasons I Love You Generator",
-    buttonText: "Generate Another Reason",
+    title: "Why You're Amazing",
+    buttonText: "Another Reason",
     reasons: [
-      "Your smile lights up my entire world",
-      "The way you laugh at my bad jokes",
-      "How you make ordinary moments magical",
-      "Your kindness that knows no bounds",
-      "The sound of your voice is my favorite melody",
-      "You believe in me even when I doubt myself",
-      "Your intelligence and wit constantly impress me",
-      "You're my safe place in a chaotic world",
-      "The way you see beauty in everything",
-      "You challenge me to be a better person",
-      "Your passion and dreams inspire me",
-      "You remember the little things",
-      "Your strength through challenges amazes me",
-      "You're my favorite hello and hardest goodbye",
-      "The way you love with your whole heart",
-      "You make every day an adventure",
-      "Your creativity and unique perspective",
-      "You're my best friend and greatest love",
-      "The way you care about others",
-      "You're beautifully, wonderfully you"
+      "The way your eyes light up when you talk about something you love",
+      "Your unwavering kindness, even when no one is watching",
+      "How you make me feel completely understood and accepted",
+      "Your intelligence and the thoughtful way you see the world",
+      "The sound of your laughter—it's my favorite sound",
+      "Your strength and resilience through everything",
+      "How you remember small details about what matters to me",
+      "Your ability to find beauty in ordinary moments",
+      "The way you challenge me to be better, without ever making me feel less",
+      "Your compassion for others and gentle spirit",
+      "How you make even quiet moments feel meaningful",
+      "Your creativity and unique perspective on life",
+      "The comfort of simply being with you",
+      "Your authenticity—you're always beautifully yourself",
+      "How you listen, truly listen, to what I'm saying",
+      "Your patience and understanding when I need it most",
+      "The way you celebrate my successes as if they were your own",
+      "Your sense of humor that always knows how to lift my spirits",
+      "How you make every day feel like an adventure worth having",
+      "Simply because you're you—perfectly, wonderfully you"
     ]
   },
 
   virtualHug: {
-    title: "Virtual Hug Machine",
-    buttonText: "I need a hug 🤗",
+    title: "Moments of Comfort",
+    buttonText: "I need a hug",
     messages: [
-      "Sending you the biggest, warmest virtual hug! Distance cannot stop my hugs! 🤗❤️",
-      "Hug delivered! Feel that? That's all my love wrapped around you! 💕",
-      "Emergency hug deployed! Wrap yourself in this digital cuddle! 🥰",
-      "Hug transmitted! May contain traces of excessive love and affection! 💖",
-      "Virtual squeeze activated! You are now officially hugged by me! 🤗✨"
+      "Sending you warmth and comfort, wrapped in all my affection.",
+      "Imagine my arms around you, holding you close.",
+      "You're never alone—I'm with you in spirit, always.",
+      "Take this virtual hug and know how much you're cared for.",
+      "Wrapping you in love and understanding from afar."
     ]
   },
 
   loveWheel: {
-    title: "Spin the Love Wheel",
+    title: "Little Connections",
     options: [
-      "Send me a selfie 📸",
-      "Give me a virtual kiss 😘",
-      "Tell me you love me 💬",
-      "Choose our next date 💝",
-      "Receive 10 compliments 🎁",
-      "Share a memory with me 🎞️",
-      "Plan a virtual date night 🎥",
-      "Tell me what you're thinking 💭"
+      "Share a beautiful moment from today",
+      "Tell me what made you smile recently",
+      "Remember a favorite memory we share",
+      "Share something you're looking forward to",
+      "Tell me what you appreciate right now",
+      "Describe something that inspired you",
+      "Share a quiet thought you've been having",
+      "Tell me about something that made you proud"
     ]
   },
 
   futureFamily: {
-    title: "Our Future Family Simulator 👨‍👩‍👧‍👦",
-    description: "A playful glimpse into our imaginary future",
+    title: "Our Future Dreams",
+    description: "A glimpse of the beautiful life ahead",
     family: {
-      dad: "Handsome tech guy who still writes love code",
-      mom: "Beautiful, amazing Maya running the world",
+      dad: "Someone who still looks at you the way he did on our first date",
+      mom: "A remarkable woman who continues to inspire everyone around her",
       kids: [
-        "Little programmer who makes dad proud",
-        "Creative artist who takes after mom",
-        "The family comedian (definitely dad's influence)"
+        "Curious minds full of wonder and kindness",
+        "Creative spirits who see magic in everyday life",
+        "Little hearts that overflow with love and laughter"
       ],
       pets: [
-        "Fluffy cat named 'Byte' 🐱",
-        "Goofy dog named 'Pixel' 🐶"
+        "A gentle cat who curls up in sunbeams",
+        "A loyal dog with endless affection"
       ],
-      home: "Cozy house filled with love, laughter, and too many devices",
-      motto: "Home is wherever we're together"
+      home: "A peaceful space filled with love, understanding, and cherished moments",
+      motto: "Home is where our hearts are together"
     }
   }
 }
 
 export const gameConfig = {
   kissCollector: {
-    title: "Kiss Collector 💋",
-    targetScore: 20,
-    winMessage: "Congratulations! You have unlocked 1 million kisses from your future husband! 💋💋💋",
-    kissTypes: ["❤️", "💋", "😘", "💕", "🥰", "😍", "💖", "💓"]
+    title: "Kiss Collector",
+    targetScore: 12,
+    winMessage: "You've collected all the kisses! A lifetime of affection awaits.",
+    kissTypes: ["💕", "💋", "😘", "❤️", "✨", "🥰", "💖", "🌟"]
   }
 }
